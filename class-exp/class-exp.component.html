@@ -1,0 +1,12 @@
+Directly accessing variables in the component:<br>
+  {{shinobi}} {{village}}<hr>
+Calling function in the component:<br>
+  {{upper(shinobi)}} {{upper(village)}}<hr>
+<a (click) = "setValues(newShinobi,'Rogue')">
+  Click to change to Rogue {{newShinobi}}</a><hr>
+<a (click) = "setValues('Black Ops',newVillage)">
+  Click to change to Black Ops {{newVillage}}</a><hr>
+<a (click) = "shinobi='Gara'">
+    Click to change to Shinobi to Gara</a><hr>
+<a (click) = "village='Hidden in the Sand'">
+    Click to change to Village to HIdden in the Sand</a><hr>
