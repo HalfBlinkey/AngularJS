@@ -1,0 +1,10 @@
+Uppercase: {{ "brendan" | uppercase}}<br>
+Lowercase: {{ "HOKAGE" | lowercase}}<br>
+Date: {{ today | date:'yMMMMEEEEhmsz'}}<br>
+Date: {{ today | date:'mediumDate'}}<br>
+Date: {{ today | date:'shortTime'}}<br>
+Number: {{ 3.1415927 | number:'2.1-5'}}<br>
+Currency: {{ 125.257 | currency:'USD':true: '1.2-2'}}<br>
+Currency: {{ 3456.346 | currency}}<br>
+Json: {{ jsonObject | json }}<br>
+Percent: {{ .8888 | percent: '2.2'}}
