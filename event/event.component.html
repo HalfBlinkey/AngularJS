@@ -1,0 +1,22 @@
+<div (mousemove)="move($event)">
+  <img [src]= "imageUrl"
+    (mouseenter)= "mouseGoesIn()"
+    (mouseleave)= "mouseLeft()"
+    (dblclick)= "changeImg()"><br>
+    Double click on the shinobi to change them.<br>
+    The Mouse has {{mouse}}<br>
+  <button (click)= "changeImg()">Change Picture</button><hr>
+  <input (keyup)= "onKeyup($event)"
+    (keydown)= "onKeydown($event)"
+    (keypress) = "keypress($event)"
+    (blur)= "underTheScope($event)"
+    (focus)= "underTheScope($event)">
+    {{view}}
+    <p>On Key up: {{upValues}}</p>
+    <p>On key down: {{downValues}}</p>
+    <p>On Key press: {{keypressValues}}</p>
+    <p (mousemove)="move($event)">
+      x coordinate: {{x}}
+      <br> y coordinate: {{y}}
+    </p>
+</div>
