@@ -1,0 +1,9 @@
+.redbox{
+  height: 75px;
+  width: 75px;
+  background-color: red;
+}
+.blueText{
+  color: blue;
+  font-size: 18px;
+}
